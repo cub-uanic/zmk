@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------------------------------------------------
+// |  ESC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  | -    |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | \    |
+// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | '    |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RHFT |
+//        |  Z  |  X  |  C  |  V  |               |  M   |  ,  |  .  |  /  |
+//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        bindings = <
+   &kp EQUAL  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5            &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS
+   &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T             &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSLH
+   &kp CAPS   &kp A      &kp S      &kp D      &kp F      &kp G             &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp SQT
+   &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B             &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT
+              &kp GRAVE  &kp BSLH   &kp LEFT   &kp RIGHT                               &kp UP     &kp DOWN   &kp RBKT   &kp LBKT
+                                               &kp LCTRL  &kp LALT          &kp RWIN   &kp RCTRL
+                                                          &kp HOME          &kp PG_UP
+                                    &kp BSPC   &kp DEL    &kp END           &kp PG_DN  &kp ENTER  &kp SPACE
+                        >;
+                };
+        };
+};
+

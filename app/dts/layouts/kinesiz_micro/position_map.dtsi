@@ -1,0 +1,7 @@
+/ {
+    layouts_kinesiz_micro_position_map: layouts_kinesiz_micro_position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        complete;
+    };
+};

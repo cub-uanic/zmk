@@ -1,0 +1,12 @@
+file_format: "1"
+id: tbkmini
+name: TBK Mini
+type: shield
+url: https://bastardkb.com/product/tbk-mini-kit/
+requires: [pro_micro]
+features:
+  - keys
+  - studio
+siblings:
+  - tbkmini_left
+  - tbkmini_right
