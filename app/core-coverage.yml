@@ -5,6 +5,9 @@ board:
 shield:
   - corne_left
   - corne_right
+  - tbkmini_left
+  - tbkmini_right
+  - kinesiz-micro
   - romac
   - settings_reset
   - tidbit
@@ -59,6 +62,21 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: "-DCONFIG_ZMK_STUDIO=y"
     nickname: "split-right-studio"
+  - board: nice_nano_v2
+    shield: tbkmini_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: "-DCONFIG_ZMK_STUDIO=y"
+    nickname: "split-left-studio"
+  - board: nice_nano_v2
+    shield: tbkmini_right
+    snippet: studio-rpc-usb-uart
+    cmake-args: "-DCONFIG_ZMK_STUDIO=y"
+    nickname: "split-right-studio"
+  - board: nice_nano_v2
+    shield: kinesiz_micro
+    snippet: studio-rpc-usb-uart
+    cmake-args: "-DCONFIG_ZMK_STUDIO=y"
+    nickname: "kinesiz-micro-studio"
   - board: sparkfun_pro_micro_rp2040
     shield: reviung41
     snippet: studio-rpc-usb-uart
