@@ -1,0 +1,11 @@
+file_format: "1"
+id:  kinesiz_micro
+name: Kinesiz Micro
+type: shield
+url: https://github.com/joric/nrfmicro/wiki/
+requires: [pro_micro]
+features:
+  - keys
+  - studio
+siblings:
+  - kinesiz_micro
