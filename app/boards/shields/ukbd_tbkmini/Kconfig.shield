@@ -1,0 +1,6 @@
+config SHIELD_UKBD_TBKMINI_LEFT
+    def_bool $(shields_list_contains,ukbd_tbkmini_left)
+
+config SHIELD_UKBD_TBKMINI_RIGHT
+    def_bool $(shields_list_contains,ukbd_tbkmini_right)
+

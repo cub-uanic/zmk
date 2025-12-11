@@ -1,0 +1,13 @@
+file_format: "1"
+
+id: ukbd_kinesis
+name: "UKbd/Kinesis"
+type: shield
+
+url: "https://example.com/ukbd"
+requires: []
+exposes: [keys]
+
+features:
+  - keys
+

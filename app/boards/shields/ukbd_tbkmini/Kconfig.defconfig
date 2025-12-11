@@ -1,0 +1,12 @@
+if SHIELD_UKBD_TBKMINI_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "ukbd_tbkmini"
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+endif
+
+if SHIELD_UKBD_TBKMINI_LEFT || SHIELD_UKBD_TBKMINI_RIGHT
+config ZMK_SPLIT
+    default y
+endif
+

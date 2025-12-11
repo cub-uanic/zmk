@@ -1,0 +1,12 @@
+if SHIELD_UKBD_CHARYBDIS_MK2_RIGHT
+config ZMK_KEYBOARD_NAME
+    default "ukbd_chary_mk2"
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+endif
+
+if SHIELD_UKBD_CHARYBDIS_MK2_LEFT || SHIELD_UKBD_CHARYBDIS_MK2_RIGHT
+config ZMK_SPLIT
+    default y
+endif
+

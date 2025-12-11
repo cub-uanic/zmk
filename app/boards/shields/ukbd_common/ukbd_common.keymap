@@ -1,0 +1,64 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include "ukbd_layout.dtsi"
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                UKBD_DEFAULT_BINDINGS
+            >;
+        };
+
+        unconv_layer {
+            bindings = <
+                UKBD_UNCONV_BINDINGS
+            >;
+        };
+
+        fkeys_layer {
+            bindings = <
+                UKBD_FKEYS_BINDINGS
+            >;
+        };
+
+        mouse_layer {
+            bindings = <
+                UKBD_MOUSE_BINDINGS
+            >;
+        };
+
+        numpad_layer {
+            bindings = <
+                UKBD_NUMPAD_BINDINGS
+            >;
+        };
+
+        arrow_layer {
+            bindings = <
+                UKBD_ARROW_BINDINGS
+            >;
+        };
+
+        macro_layer {
+            bindings = <
+                UKBD_MACRO_BINDINGS
+            >;
+        };
+
+        upper_layer {
+            bindings = <
+                UKBD_UPPER_BINDINGS
+            >;
+        };
+
+        efkeys_layer {
+            bindings = <
+                UKBD_EFKEYS_BINDINGS
+            >;
+        };
+    };
+};
+

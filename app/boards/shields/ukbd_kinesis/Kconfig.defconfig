@@ -1,0 +1,10 @@
+if SHIELD_UKBD_KINESIS
+
+config ZMK_KEYBOARD_NAME
+    default "ukbd_kinesis"
+
+config ZMK_SPLIT
+    default n
+
+endif
+

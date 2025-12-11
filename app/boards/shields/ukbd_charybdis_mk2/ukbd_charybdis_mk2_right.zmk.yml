@@ -1,0 +1,15 @@
+file_format: "1"
+
+id: ukbd_charybdis_mk2_right
+name: "ukbd Charybdis mk2 Right"
+type: shield
+
+url: "https://example.com/ukbd"
+requires: []
+exposes: [keys]
+
+features:
+  - keys
+  - split
+  - pointer
+

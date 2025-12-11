@@ -1,0 +1,14 @@
+file_format: "1"
+
+id: ukbd_tbkmini_right
+name: "ukbd TBKMINI Right"
+type: shield
+
+url: "https://example.com/ukbd"
+requires: []
+exposes: [keys]
+
+features:
+  - keys
+  - split
+
