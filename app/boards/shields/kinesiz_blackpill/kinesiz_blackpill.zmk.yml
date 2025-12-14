@@ -1,0 +1,11 @@
+file_format: "1"
+id:  kinesiz_blackpill
+name: Kinesiz on BlackPill
+type: shield
+url: https://github.com/joric/nrfmicro/wiki/
+requires: [blackpill_f411ce]
+features:
+  - keys
+  - studio
+siblings:
+  - kinesiz_blackpill

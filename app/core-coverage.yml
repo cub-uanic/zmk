@@ -8,6 +8,7 @@ shield:
   - tbkmini_left
   - tbkmini_right
   - kinesiz-micro
+  - kinesiz-blackpill
   - romac
   - settings_reset
   - tidbit
@@ -77,6 +78,8 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: "-DCONFIG_ZMK_STUDIO=y"
     nickname: "kinesiz-micro-studio"
+  - board: blackpill_f411ce
+    shield: kinesiz_blackpill
   - board: sparkfun_pro_micro_rp2040
     shield: reviung41
     snippet: studio-rpc-usb-uart

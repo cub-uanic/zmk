@@ -1,0 +1,23 @@
+/*
+ * Copyright (c) 2020 Pete Johanson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "kinesiz_blackpill.dtsi"
+
+/ {
+  chosen {
+    zephyr,code-partition = &kinesiz_slot0_partition;
+  };
+};
+
+&flash0 {
+  partitions {
+    kinesiz_slot0_partition: partition@10000 {
+      label = "kinesiz-image-0";
+      reg = <0x00010000 0x00070000>;
+    };
+  };
+};
+
