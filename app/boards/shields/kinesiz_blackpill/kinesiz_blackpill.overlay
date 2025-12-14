@@ -8,6 +8,12 @@
 
 / {
   chosen {
+    zephyr,udc = &zephyr_udc0;
+  };
+};
+
+/ {
+  chosen {
     zephyr,code-partition = &kinesiz_slot0_partition;
   };
 };
@@ -19,5 +25,36 @@
       reg = <0x00010000 0x00070000>;
     };
   };
+};
+
+/* WeAct BlackPill STM32F411: HSE=25MHz + PLL для SYSCLK=84MHz и USB=48MHz */
+
+&clk_hse {
+    status = "okay";
+    clock-frequency = <25000000>;
+};
+
+&pll {
+    status = "okay";
+    /* вход PLL должен быть 1..2 MHz: 25MHz / 25 = 1MHz */
+    div-m = <25>;
+    /* VCO = 1MHz * 336 = 336MHz */
+    mul-n = <336>;
+    /* SYSCLK = 336 / 4 = 84MHz */
+    div-p = <4>;
+    /* USB = 336 / 7 = 48MHz */
+    div-q = <7>;
+    clocks = <&clk_hse>;
+};
+
+&rcc {
+    /* SYSCLK source = PLL */
+    clocks = <&pll>;
+    clock-frequency = <84000000>;
+
+    /* типичные прескейлеры для F4 */
+    ahb-prescaler = <1>;
+    apb1-prescaler = <2>;
+    apb2-prescaler = <1>;
 };
 
